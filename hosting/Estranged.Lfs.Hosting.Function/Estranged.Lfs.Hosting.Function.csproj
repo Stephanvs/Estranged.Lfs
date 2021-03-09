@@ -8,6 +8,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Estranged.Lfs.Api\Estranged.Lfs.Api.csproj" />
+    <ProjectReference Include="..\Estranged.Lfs.Hosting.AspNet\Estranged.Lfs.Hosting.AspNet.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

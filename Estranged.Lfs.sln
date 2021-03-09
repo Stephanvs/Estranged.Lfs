@@ -38,7 +38,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estranged.Lfs.Tests", "test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estranged.Lfs.Adapter.Azure.Blob", "src\Estranged.Lfs.Adapter.Azure.Blob\Estranged.Lfs.Adapter.Azure.Blob.csproj", "{E4A09D4E-FF7F-4899-9384-5E8A90D0E9DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estranged.Lfs.Hosting.Function", "hosting\Estranged.Lfs.Hosting.Function\Estranged.Lfs.Hosting.Function.csproj", "{972C0436-149D-4B6C-A87D-8D8D34A201E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estranged.Lfs.Hosting.Function", "hosting\Estranged.Lfs.Hosting.Function\Estranged.Lfs.Hosting.Function.csproj", "{972C0436-149D-4B6C-A87D-8D8D34A201E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
