@@ -7,7 +7,7 @@ namespace Estranged.Lfs.Hosting.Function
 {
     internal abstract class ApplicationWrapper
     {
-        internal abstract object CreateContex(IFeatureCollection features);
+        internal abstract object CreateContext(IFeatureCollection features);
 
         internal abstract Task ProcessRequestAsync(object context);
 
@@ -25,7 +25,7 @@ namespace Estranged.Lfs.Hosting.Function
             _preProcessRequestAsync = preProcessRequestAsync;
         }
 
-        internal override object CreateContex(IFeatureCollection features)
+        internal override object CreateContext(IFeatureCollection features)
         {
             return ((IHttpApplication<TContext>)this).CreateContext(features);
         }
