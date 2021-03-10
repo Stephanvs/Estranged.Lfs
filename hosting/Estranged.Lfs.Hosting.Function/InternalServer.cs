@@ -16,6 +16,11 @@ namespace Estranged.Lfs.Hosting.Function
 
         public static InternalServer Instance { get; set; }
 
+        internal ApplicationWrapper Application
+        {
+            get => _application ?? throw new InvalidOperationException("The server has not been started or no web application was configured.");
+        }
+
         static InternalServer()
         {
             var builder = new WebHostBuilder()
