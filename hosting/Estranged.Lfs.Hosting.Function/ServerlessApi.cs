@@ -13,7 +13,10 @@ namespace Estranged.Lfs.Hosting.Function
     public static class ServerlessApi
     {
         [FunctionName("Proxy")]
-        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, Route = "{*all}")] HttpRequest req, ILogger log)
+        public static async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, Route = "{*all}")]
+            HttpRequest req,
+            ILogger log)
         {
             return new ProxyActionResult();
         }
